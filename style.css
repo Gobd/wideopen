@@ -1,0 +1,228 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'> <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*, html {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  margin: 15px;
+}
+.top {
+  height: 490px;
+  width: 100%;
+  background: url("wot-masthead-dark.jpg") center bottom;
+  top: 0;
+  background-size: cover;
+}
+.btn {
+  background-color: #BDD435;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: white;
+  margin: 0;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+#how {
+  padding: 25px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F0F0F0;
+}
+.heres-how2 {
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  line-height: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 150%;
+  color: #40666D;
+}
+#heres-how {
+  font-weight: 300;
+  color: #40666D;
+  font-size: 250%;
+  font-family: 'Oswald', sans-serif;
+}
+em {
+  font-weight: 700;
+  color: #BDD537;
+}
+#test {
+  display: flex;
+  justify-content: center;
+  height: 75px;
+  width: 100%;
+  padding: 50px;
+}
+#logo {
+  padding-right: 50px;
+}
+#nav {
+  margin-right: 50px;
+  align-items: center;
+}
+#nav a {
+  font-size: 17px;
+  font-family: 'Lato', sans-serif;
+}
+#nav a:link {
+  color: white;
+}
+#nav a:visited {
+  color: white;
+}
+#redgiant {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") 5px -10px;
+  transition: all ease-in-out 500ms;
+}
+#taylor {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") -305px -10px;
+  transition: all ease-in-out 500ms;
+}
+#smart {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") -630px -4px;
+  transition: all ease-in-out 500ms;
+}
+#tool {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") 0 -153px;
+  transition: all ease-in-out 500ms;
+}
+#heel {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") -300px -150px;
+  transition: all ease-in-out 500ms;
+}
+#digi {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") -630px -150px;
+  transition: all ease-in-out 500ms;
+}
+#diet {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") 0 -300px;
+  transition: all ease-in-out 500ms;
+}
+#sirona {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 0 15px;
+  background: url("sprite_client_logos.jpg") -306px -300px;
+  transition: all ease-in-out 500ms;
+}
+#just {
+  width: 245px;
+  height: 125px;
+  margin: 0 15px 30px 15px;
+  background: url("sprite_client_logos.jpg") -630px -290px;
+  transition: all ease-in-out 500ms;
+}
+#how-sprite {
+  width: 75px;
+  height: 75px;
+  margin: 30px 0 20px 0;
+  background: url("sprite_home.png") -22px -113px;
+}
+.comp:hover {
+  transform: scale(1.1);
+}
+#c1 {
+  width: 50%;
+  align-items: center;
+}
+.companies {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #BDD537;
+}
+.companies p {
+  padding: 30px 0 30px 0;
+  margin: 0;
+  font-size: 250%;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-family: 'Oswald', sans-serif;
+}
+#ham {
+  display: none;
+}
+#workshop {
+  color: white;
+  width: 650px;
+  font-family: 'Lato', sans-serif;
+  margin: 0 auto 0 auto;
+}
+#workshop2 {
+  margin-top: -20px;
+  margin-left: 25px;
+  font-size: 900%;
+}
+#yourdigital {
+  padding: 0;
+  font-size: 150%;
+  ;
+}
+@media (max-width: 980px) {
+  #test {
+    height: 75px;
+    width: 100%;
+    padding: 50px;
+    flex-direction: column;
+  }
+  #logo {
+    width: 100%;
+    padding: 0 0 20px 0;
+    border: 0;
+    margin: 0;
+  }
+  #nav {
+    position: absolute;
+    right: -25px;
+  }
+}
+@media (max-width: 685px) {
+  #logo {
+    position: absolute;
+    left: 0;
+    top: 20px;
+  }
+  #ham {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 35px;
+    color: white;
+  }
+  #nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
