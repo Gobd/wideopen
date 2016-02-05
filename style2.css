@@ -1,0 +1,184 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'> <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/*nav link styling, nth-of-type style gets all links in nav except the buttom for a right margin*/
+.nav a:link:nth-of-type(-n+5) {
+  margin-right: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+}
+.nav a:visited {
+  color: white;
+  border-color: #525151;
+}
+.nav a:hover {
+  color: #BDD435;
+}
+/*top background*/
+#top {
+  width: 100%;
+  background: url("wot-masthead-dark.jpg") center bottom;
+  padding-top: 20px;
+  background-size: cover;
+}
+/*logo positioning*/
+#logo {
+  display: inline;
+  position: relative;
+  padding-left:10%;
+}
+/*force nav to wrap before hittin logo*/
+#logo img {
+  margin-right: 160px;
+}
+/*keep nav on the right side of screen*/
+.nav {
+  float: right;
+  padding: 15px 10% 0 0;
+}
+/*button styling*/
+.btn {
+  background-color: #BDD435;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+}
+.nav .btn:hover {
+  color: white;
+  background-color: #C2DA34;
+}
+/*Your digital workshop text*/
+#workshop {
+  width: 655px;
+  margin: auto;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+#your {
+  margin: 90px 0 0 -20px;
+  font-size: 150%;
+}
+#workshop2 {
+  margin: -10px 0 0 0;
+  letter-spacing: 1.1px;
+  font-size: 900%;
+}
+/*building business solutions and bright ideas text and bars*/
+.bar {
+  display: inline-block;
+ width: 80px;
+ height: 10px;
+ background-color: white;
+}
+#mid {
+  display: inline-block;
+}
+#mid p {
+  margin: 0 50px 30px 50px;
+}
+#sol {
+  color: #FF803A;
+}
+#idea {
+  color: #BDD537;
+}
+#midcontainer {
+  width: 572px;
+  margin: auto;
+}
+/*hamburger menu hidden in large windows*/
+#ham {
+  display: none;
+}
+/*making padding smaller so we can avoid hamburger menu for a little longer*/
+@media (max-width: 900px) {
+  #logo {
+    padding-left: 5%;
+  }
+  .nav {
+padding-right: 5%;
+  }
+}
+/*the menu needs to collapse to avoid going offscreen*/
+@media (max-width: 725px) {
+  #ham {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    display: block;
+  }
+  #ham a:visited {
+    color: white;
+  }
+  /*nav content will be hidden until hamburger is clocked, then it will animate up and down*/
+  .nav {
+    max-height: 0;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    float: none;
+    margin: 15px 0 30px 0;
+    padding: 0;
+    width: 100%;
+    transition: max-height 0.5s;
+  }
+  .navo {
+    max-height: 265px;
+    transition: max-height 0.5s;
+  }
+  /*this gets all nav links except the button and applies top and bottom padding to center in background*/
+  .nav a:link:nth-of-type(-n+5) {
+    background: rgba(30,30,30,0.9);
+    padding: 13px 0 13px 10px;
+    margin: 0;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    border-bottom: 1px solid;
+  }
+  .btn {
+    border-radius: 0;
+    width: 100%;
+    text-align: center;
+    padding:13px 100% 13px 0;
+  }
+  /*resizing all workshop & business building solutions text for smaller windows*/
+  #workshop {
+    width: 440px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+  #your {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 100%;
+  }
+  #workshop2 {
+    margin: -10px 0 0 0;
+    font-size: 600%;
+  }
+  .bar {
+   width: 50px;
+   height: 6px;
+  }
+  #mid p {
+    margin: 0 25px 30px 25px;
+    font-size: 75%;
+  }
+  #midcontainer {
+    width: 386px;
+  }
+}

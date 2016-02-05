@@ -13,7 +13,6 @@ a {
   margin: 15px;
 }
 .top {
-  height: 490px;
   width: 100%;
   background: url("wot-masthead-dark.jpg") center bottom;
   top: 0;
@@ -178,7 +177,8 @@ em {
   color: white;
   width: 650px;
   font-family: 'Lato', sans-serif;
-  margin: 0 auto 0 auto;
+  margin: auto;
+  padding: 0 0 50px 0;
 }
 #workshop2 {
   margin-top: -20px;
@@ -188,7 +188,6 @@ em {
 #yourdigital {
   padding: 0;
   font-size: 150%;
-  ;
 }
 @media (max-width: 980px) {
   #test {
@@ -221,8 +220,17 @@ em {
     right: 35px;
     color: white;
   }
+  .test {
+    height: auto;
+  }
+  .top {
+    height: auto;
+  }
   #nav {
     display: flex;
+    align-self: center;
     flex-direction: column;
+    width: 100%;
+    height: 300px;
   }
 }
