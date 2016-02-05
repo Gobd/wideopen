@@ -22,7 +22,7 @@
 .nav a:hover {
   color: #BDD435;
 }
-/*top background*/
+/*top background positioning*/
 #top {
   width: 100%;
   background: url("wot-masthead-dark.jpg") center bottom;
@@ -35,7 +35,7 @@
   position: relative;
   padding-left:10%;
 }
-/*force nav to wrap before hittin logo*/
+/*force nav to wrap before hitting logo*/
 #logo img {
   margin-right: 160px;
 }
@@ -76,6 +76,10 @@
   font-size: 900%;
 }
 /*building business solutions and bright ideas text and bars*/
+#midcontainer {
+  width: 572px;
+  margin: auto;
+}
 .bar {
   display: inline-block;
  width: 80px;
@@ -94,10 +98,6 @@
 #idea {
   color: #BDD537;
 }
-#midcontainer {
-  width: 572px;
-  margin: auto;
-}
 /*hamburger menu hidden in large windows*/
 #ham {
   display: none;
@@ -111,7 +111,7 @@
 padding-right: 5%;
   }
 }
-/*the menu needs to collapse to avoid going offscreen*/
+/*the menu needs to collapse to hamburger to avoid going offscreen*/
 @media (max-width: 725px) {
   #ham {
     position: absolute;
@@ -123,7 +123,7 @@ padding-right: 5%;
   #ham a:visited {
     color: white;
   }
-  /*nav content will be hidden until hamburger is clocked, then it will animate up and down*/
+  /*nav content will be hidden until hamburger is clicked, then it will animate up and down, it is hidden by 0 height and overflow hiddden*/
   .nav {
     max-height: 0;
     display: flex;
@@ -135,6 +135,7 @@ padding-right: 5%;
     width: 100%;
     transition: max-height 0.5s;
   }
+  /*setting height will show the nav area*/
   .navo {
     max-height: 265px;
     transition: max-height 0.5s;
@@ -149,6 +150,7 @@ padding-right: 5%;
     font-family: 'Lato', sans-serif;
     border-bottom: 1px solid;
   }
+  /*center text and remove border radius*/
   .btn {
     border-radius: 0;
     width: 100%;
